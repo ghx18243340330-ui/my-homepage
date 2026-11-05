@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>葛洪旭 · 保险代理人</title>
+  <meta name="description" content="我是葛洪旭，一名保险代理人。以专业与真诚，守护每一个家庭的安心与未来。">
+  <meta name="author" content="葛洪旭">
+  <meta name="theme-color" content="#f8f8f1">
+  <meta name="color-scheme" content="light">
+  <meta property="og:title" content="葛洪旭 · 保险代理人">
+  <meta property="og:description" content="以专业与真诚，守护每一个家庭的安心与未来。">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="zh_CN">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e8b04a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23173247' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+  <script>document.documentElement.classList.add('js');</script>
+  <style>
+    /* ===== 基础与配色（改这里即可换主题色） ===== */
+    *, *::before, *::after { box-sizing: border-box; }
+    * { margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f8f8f1;
+      --bg-deep: #eef6fa;
+      --surface: #fffdf8;
+      --text: #173247;
+      --text-soft: #4f6472;
+      --muted: #728793;
+      --accent: #e8b04a;
+      --accent-ink: #a26c16;
+      --blue: #2b7295;
+      --blue-deep: #1a4c64;
+      --line: rgba(23, 50, 71, .12);
+      --line-soft: rgba(23, 50, 71, .07);
+      --line-strong: rgba(23, 50, 71, .2);
+      --footer-line: rgba(23, 50, 71, .11);
+      --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, "Songti SC", "Noto Serif SC", "Source Han Serif SC", "STSong", SimSun, Georgia, serif;
+      --pad: clamp(20px, 5.5vw, 88px);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 84px;
+      scrollbar-color: rgba(23, 50, 71, .26) var(--bg);
+      scrollbar-gutter: stable;
+    }
+
+    body {
+      min-height: 100%;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-serif);
+      font-size: 16px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      overflow-x: hidden;
+    }
+
+    ::selection { background: var(--accent); color: var(--text); }
+
+    a { color: inherit; }
+    svg { display: block; }
+    button { font-family: inherit; }
+
+    :focus-visible {
+      outline: 2px solid var(--blue);
+      outline-offset: 4px;
+    }
+
+    ::-webkit-scrollbar { width: 10px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(23, 50, 71, .2);
+      border-radius: 999px;
+      border: 2px solid var(--bg);
+    }
+
+    /* ===== 明亮流动的渐变背景 ===== */
+    .site-bg {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      overflow: hidden;
+      background: var(--bg);
+      pointer-events: none;
+    }
+
+    .site-bg::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(118deg, #fbf9f2 0%, #eef7fb 30%, #fff8e8 56%, #f4faf5 78%, #fbf9f2 100%);
+    }
+
+    .site-bg::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(120% 90% at 50% 35%, transparent 32%, rgba(255, 252, 244, .42) 100%);
+    }
+
+    .bg-glow {
+      position: absolute;
+      border-radius: 50%;
+      will-change: transform, opacity;
+    }
+
+    .glow-1 {
+      width: min(920px, 72vw);
+      aspect-ratio: 1;
+      left: -18%;
+      top: -22%;
+      background: radial-gradient(circle, rgba(133, 198, 235, .5) 0%, rgba(133, 198, 235, .18) 40%, transparent 68%);
+      animation: driftOne 28s ease-in-out infinite alternate;
+    }
+
+    .glow-2 {
+      width: min(760px, 58vw);
+      aspect-ratio: 1;
+      right: -14%;
+      top: 1%;
+      background: radial-gradient(circle, rgba(255, 205, 108, .52) 0%, rgba(255, 205, 108, .18) 42%, transparent 70%);
+      animation: driftTwo 36s ease-in-out infinite alternate;
+    }
+
+    .glow-3 {
+      width: min(1040px, 80vw);
+      aspect-ratio: 1;
+      left: 8%;
+      bottom: -38%;
+      background: radial-gradient(circle, rgba(162, 219, 199, .42) 0%, rgba(162, 219, 199, .14) 45%, transparent 70%);
+      animation: driftThree 32s ease-in-out infinite alternate;
+    }
+
+    @keyframes driftOne {
+      0%   { transform: translate3d(-2%, -2%, 0) scale(1); opacity: .75; }
+      100% { transform: translate3d(9%, 7%, 0) scale(1.14); opacity: 1; }
+    }
+    @keyframes driftTwo {
+      0%   { transform: translate3d(3%, -3%, 0) scale(1.06); opacity: .7; }
+      100% { transform: translate3d(-8%, 6%, 0) scale(.95); opacity: 1; }
+    }
+    @keyframes driftThree {
+      0%   { transform: translate3d(-3%, 4%, 0) scale(1); opacity: .65; }
+      100% { transform: translate3d(6%, -7%, 0) scale(1.12); opacity: 1; }
+    }
+
+    /* 细腻的颗粒质感 */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: .028;
+      mix-blend-mode: multiply;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-size: 180px 180px;
+    }
+
+    /* ===== 顶部导航 ===== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 16px var(--pad);
+      background: rgba(250, 249, 244, .72);
+      -webkit-backdrop-filter: saturate(130%) blur(18px);
+      backdrop-filter: saturate(130%) blur(18px);
+      border-bottom: 1px solid var(--line-soft);
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      text-decoration: none;
+    }
+
+    .brand-mark {
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--text);
+      font-size: 13px;
+      font-weight: 500;
+      line-height: 1;
+      transition: transform .5s cubic-bezier(.22, 1, .36, 1);
+    }
+    .brand:hover .brand-mark { transform: rotate(-10deg); }
+
+    .brand-name {
+      color: var(--text);
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: .18em;
+    }
+
+    .site-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(16px, 2.4vw, 30px);
+    }
+
+    .nav-link {
+      position: relative;
+      padding: 6px 0;
+      color: var(--text-soft);
+      font-size: 12.5px;
+      letter-spacing: .16em;
+      text-decoration: none;
+      transition: color .3s ease;
+    }
+    .nav-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      background: var(--blue);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .4s cubic-bezier(.22, 1, .36, 1);
+    }
+    .nav-link:hover { color: var(--text); }
+    .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: var(--text);
+      font-size: 12.5px;
+      letter-spacing: .14em;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(201, 143, 35, .16);
+      transition: background-color .3s ease, color .3s ease, transform .3s ease, box-shadow .3s ease;
+    }
+    .nav-cta:hover {
+      background: var(--blue);
+      color: #fffdf8;
+      transform: translateY(-1px);
+      box-shadow: 0 10px 24px rgba(43, 114, 149, .22);
+    }
+
+    /* ===== 首屏 ===== */
+    .hero {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: center;
+      column-gap: clamp(32px, 5vw, 88px);
+      min-height: calc(100vh - 67px);
+      min-height: calc(100svh - 67px);
+      padding: clamp(56px, 9vh, 104px) var(--pad) clamp(112px, 16vh, 152px);
+    }
+
+    .hero-copy { max-width: 860px; }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: clamp(22px, 3vw, 32px);
+      color: var(--blue);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: .26em;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: currentColor;
+      opacity: .65;
+    }
+    .eyebrow .en {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 11px;
+      letter-spacing: .1em;
+      color: var(--text-soft);
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .hero-hello {
+      display: block;
+      margin-bottom: clamp(14px, 2vw, 22px);
+      color: var(--text-soft);
+      font-size: clamp(.9rem, 1.15vw, 1rem);
+      letter-spacing: .5em;
+      line-height: 1.6;
+    }
+
+    .hero-name {
+      display: block;
+      color: var(--text);
+      font-size: clamp(4rem, 14vw, 8.75rem);
+      line-height: 1.08;
+      letter-spacing: .03em;
+      white-space: nowrap;
+    }
+    .hero-name::after {
+      content: "";
+      display: inline-block;
+      width: .09em;
+      height: .09em;
+      margin-left: .08em;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .hero-tagline {
+      max-width: 30em;
+      margin-top: clamp(26px, 3.5vw, 38px);
+      color: var(--text-soft);
+      font-size: clamp(1.05rem, 1.35vw, 1.2rem);
+      line-height: 2;
+      letter-spacing: .045em;
+      text-wrap: pretty;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: clamp(30px, 4vw, 42px);
+    }
+    .hero-tags span {
+      display: inline-flex;
+      padding: 8px 16px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .55);
+      color: var(--text-soft);
+      font-size: 11.5px;
+      letter-spacing: .16em;
+    }
+    .hero-tags span:first-child {
+      color: var(--blue);
+      border-color: rgba(43, 114, 149, .32);
+      background: rgba(255, 255, 255, .72);
+    }
+
+    /* 右侧环形文字装饰 */
+    .hero-orbit {
+      width: clamp(230px, 23vw, 330px);
+      aspect-ratio: 1;
+      margin-right: clamp(0px, 2vw, 32px);
+      color: #78939f;
+    }
+    .hero-orbit svg {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+    .orbit-ring {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1;
+      opacity: .22;
+    }
+    .orbit-ring-inner {
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1;
+      opacity: .12;
+    }
+    .orbit-text {
+      fill: currentColor;
+      font-family: var(--font-serif);
+      font-size: 10.5px;
+      letter-spacing: 3.4px;
+      opacity: .78;
+    }
+    .orbit-dot { fill: var(--accent); }
+    .orbit-mark {
+      fill: var(--accent);
+      font-family: var(--font-serif);
+      font-size: 26px;
+    }
+    .orbit-spin {
+      transform-box: view-box;
+      transform-origin: 120px 120px;
+    }
+    @keyframes orbitSpin { to { transform: rotate(360deg); } }
+
+    /* 滚动提示 */
+    .scroll-cue {
+      position: absolute;
+      left: var(--pad);
+      bottom: clamp(24px, 4vh, 40px);
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      color: var(--text-soft);
+      font-family: var(--font-serif);
+      font-size: 10px;
+      letter-spacing: .32em;
+      text-decoration: none;
+      transition: color .3s ease;
+    }
+    .scroll-cue:hover { color: var(--text); }
+    .scroll-cue-line {
+      position: relative;
+      display: block;
+      width: 1px;
+      height: 46px;
+      overflow: hidden;
+      background: var(--line);
+    }
+    .scroll-cue-line::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 1px;
+      height: 18px;
+      background: var(--blue);
+    }
+    @keyframes scrollLine {
+      0% { transform: translateY(-22px); opacity: 0; }
+      25% { opacity: 1; }
+      100% { transform: translateY(50px); opacity: 0; }
+    }
+
+    /* ===== 关于我 ===== */
+    .about {
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr);
+      gap: clamp(40px, 7vw, 120px);
+      padding: clamp(92px, 12vw, 160px) var(--pad);
+      border-top: 1px solid var(--line-soft);
+    }
+
+    .section-index {
+      display: flex;
+      align-items: center;
+      gap: 11px;
+      margin-bottom: clamp(22px, 3vw, 30px);
+      color: var(--text-soft);
+      font-size: 11.5px;
+      letter-spacing: .18em;
+    }
+    .section-index .num {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 12px;
+      letter-spacing: .06em;
+      color: var(--accent-ink);
+    }
+    .section-index .label {
+      color: var(--text);
+      font-weight: 400;
+      letter-spacing: .26em;
+    }
+    .section-index .en {
+      padding-left: 11px;
+      border-left: 1px solid var(--line);
+      color: var(--muted);
+      font-family: var(--font-serif);
+      font-size: 10px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+
+    .about h2 {
+      font-size: clamp(2rem, 3.6vw, 3.4rem);
+      line-height: 1.48;
+      font-weight: 400;
+      letter-spacing: .03em;
+      color: var(--text);
+    }
+    .about h2 .soft {
+      color: #6d8492;
+      font-weight: 400;
+    }
+
+    .about-body { max-width: 640px; }
+
+    .about-text {
+      color: var(--text-soft);
+      font-size: clamp(1.05rem, 1.22vw, 1.16rem);
+      line-height: 2.15;
+      letter-spacing: .04em;
+    }
+    .mark {
+      color: var(--text);
+      background-image: linear-gradient(transparent 64%, rgba(232, 176, 74, .32) 64%);
+    }
+
+    .about-sign {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-top: clamp(32px, 4vw, 48px);
+      color: var(--text-soft);
+      font-size: 12px;
+      letter-spacing: .2em;
+    }
+    .about-sign::before {
+      content: "";
+      width: 48px;
+      height: 1px;
+      background: var(--accent);
+      opacity: .9;
+    }
+
+    /* ===== 页脚 / 联系方式 ===== */
+    .site-footer {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(80px, 10vw, 128px) var(--pad) 30px;
+      background:
+        radial-gradient(55rem 30rem at 92% -12%, rgba(255, 206, 112, .24), transparent 62%),
+        radial-gradient(50rem 34rem at 0% 100%, rgba(151, 206, 225, .16), transparent 65%),
+        linear-gradient(180deg, rgba(240, 248, 252, .55) 0%, #eef6fa 28%, #f8f7f0 100%);
+      border-top: 1px solid var(--line);
+      color: var(--text);
+    }
+    .site-footer::before {
+      content: "";
+      position: absolute;
+      width: 80vw;
+      aspect-ratio: 1;
+      right: -30vw;
+      top: -42vw;
+      border: 1px solid rgba(43, 114, 149, .1);
+      border-radius: 50%;
+    }
+    .site-footer::after {
+      content: "";
+      position: absolute;
+      width: 52vw;
+      aspect-ratio: 1;
+      right: -14vw;
+      top: -24vw;
+      border: 1px solid rgba(43, 114, 149, .07);
+      border-radius: 50%;
+    }
+
+    .footer-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .footer-index { color: var(--muted); }
+    .footer-index .num { color: var(--accent-ink); }
+    .footer-index .label { color: var(--text); }
+    .footer-index .en {
+      color: var(--muted);
+      border-left-color: var(--line);
+    }
+
+    .footer-top { max-width: 900px; }
+
+    .footer-title {
+      font-size: clamp(2.1rem, 5vw, 4.4rem);
+      line-height: 1.42;
+      font-weight: 400;
+      letter-spacing: .03em;
+      color: var(--text);
+    }
+    .footer-title .soft {
+      color: #6d8492;
+      font-weight: 400;
+    }
+
+    .footer-note {
+      max-width: 34em;
+      margin-top: clamp(20px, 2.6vw, 28px);
+      color: #536b79;
+      font-size: clamp(1rem, 1.1vw, 1.08rem);
+      line-height: 2;
+      letter-spacing: .04em;
+    }
+
+    .socials {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: clamp(56px, 8vw, 96px);
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      width: 100%;
+      padding: 22px 24px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .62);
+      color: var(--text);
+      font: inherit;
+      text-align: left;
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: 0 8px 28px rgba(32, 68, 86, .045);
+      transition: background-color .35s ease, border-color .35s ease, transform .35s ease, box-shadow .35s ease;
+    }
+    .social-link:hover {
+      background: #fffdf9;
+      border-color: rgba(43, 114, 149, .3);
+      transform: translateY(-3px);
+      box-shadow: 0 16px 40px rgba(32, 68, 86, .1);
+    }
+    .social-link:focus-visible { outline-offset: 4px; }
+
+    .social-name {
+      display: block;
+      font-size: 15px;
+      letter-spacing: .16em;
+      color: var(--text);
+    }
+    .social-en {
+      display: block;
+      margin-top: 5px;
+      color: var(--muted);
+      font-family: var(--font-serif);
+      font-size: 10.5px;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .social-en.email-address {
+      text-transform: none;
+      letter-spacing: .03em;
+      font-size: 11.5px;
+    }
+    .social-icon-wrap {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: rgba(43, 114, 149, .09);
+      color: var(--blue);
+      transition: background-color .35s ease, color .35s ease, transform .35s ease;
+    }
+    .social-icon { color: inherit; }
+    .social-link:hover .social-icon-wrap {
+      background: var(--blue);
+      color: #fffdf8;
+      transform: translateY(-2px);
+    }
+
+    .footer-bottom {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px 28px;
+      margin-top: clamp(36px, 5vw, 56px);
+      color: #526b79;
+      font-size: 11.5px;
+      letter-spacing: .12em;
+    }
+    .footer-bottom .sep { margin: 0 6px; opacity: .5; }
+    .footer-motto {
+      color: var(--muted);
+      font-family: var(--font-serif);
+      font-size: 10.5px;
+      letter-spacing: .22em;
+    }
+    .footer-bottom a {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: #456273;
+      text-decoration: none;
+      transition: color .3s ease;
+    }
+    .footer-bottom a:hover { color: var(--text); }
+
+    /* ===== 二维码弹窗 ===== */
+    .qr-dialog {
+      width: min(92vw, 424px);
+      max-height: calc(100svh - 32px);
+      margin: auto;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: var(--text);
+      overflow: visible;
+    }
+    .qr-dialog::backdrop {
+      background: rgba(210, 232, 241, .68);
+      -webkit-backdrop-filter: blur(14px);
+      backdrop-filter: blur(14px);
+    }
+    .qr-panel {
+      max-height: calc(100svh - 32px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      padding: 20px;
+      border: 1px solid var(--line-strong);
+      border-radius: 20px;
+      background: linear-gradient(160deg, #fffdf9, #f8fbfc);
+      box-shadow: 0 32px 90px rgba(32, 68, 86, .25);
+    }
+    .qr-head {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 16px;
+    }
+    .qr-kicker {
+      margin-bottom: 6px;
+      color: var(--blue);
+      font-size: 10px;
+      letter-spacing: .28em;
+      text-transform: uppercase;
+    }
+    .qr-title {
+      font-size: clamp(1.3rem, 2vw, 1.55rem);
+      line-height: 1.4;
+      font-weight: 400;
+      letter-spacing: .04em;
+      color: var(--text);
+    }
+    .qr-close {
+      flex: 0 0 auto;
+      display: grid;
+      place-items: center;
+      width: 34px;
+      height: 34px;
+      border: 1px solid var(--line);
+      border-radius: 50%;
+      background: transparent;
+      color: var(--text-soft);
+      cursor: pointer;
+      transition: color .3s ease, border-color .3s ease, transform .3s ease;
+    }
+    .qr-close:hover {
+      color: var(--blue);
+      border-color: var(--blue);
+      transform: rotate(90deg);
+    }
+    .qr-media {
+      overflow: hidden;
+      border: 1px solid rgba(23, 50, 71, .12);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 10px 26px rgba(32, 68, 86, .07);
+    }
+    .qr-media img {
+      display: block;
+      width: 100%;
+      height: auto;
+      background: #fff;
+    }
+    .qr-note {
+      margin-top: 14px;
+      text-align: center;
+      color: var(--text-soft);
+      font-size: 11.5px;
+      letter-spacing: .1em;
+    }
+    .qr-dialog[open] { animation: dialogIn .4s cubic-bezier(.22, 1, .36, 1); }
+    @keyframes dialogIn {
+      from { opacity: 0; transform: translateY(16px) scale(.98); }
+      to { opacity: 1; transform: none; }
+    }
+    body.modal-open { overflow: hidden; }
+
+    /* ===== 入场与滚动动效 ===== */
+    @media (prefers-reduced-motion: no-preference) {
+      .hero-copy > * { animation: riseIn .95s cubic-bezier(.22, 1, .36, 1) both; }
+      .hero-copy > :nth-child(2) { animation-delay: .08s; }
+      .hero-copy > :nth-child(3) { animation-delay: .18s; }
+      .hero-copy > :nth-child(4) { animation-delay: .28s; }
+      .hero-orbit { animation: fadeIn 1.3s ease .45s both; }
+      .scroll-cue { animation: fadeIn 1s ease .8s both; }
+      .orbit-spin { animation: orbitSpin 46s linear infinite; }
+      .scroll-cue-line::after { animation: scrollLine 2.4s cubic-bezier(.65, 0, .35, 1) infinite; }
+    }
+
+    @keyframes riseIn {
+      from { opacity: 0; transform: translateY(26px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity .9s cubic-bezier(.22, 1, .36, 1), transform .9s cubic-bezier(.22, 1, .36, 1);
+    }
+    .js .reveal[data-delay="1"] { transition-delay: .1s; }
+    .js .reveal[data-delay="2"] { transition-delay: .2s; }
+    .js .reveal.is-visible {
+      opacity: 1;
+      transform: none;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .bg-glow,
+      .orbit-spin,
+      .scroll-cue-line::after { animation: none; }
+      .js .reveal { opacity: 1; transform: none; transition: none; }
+      .qr-dialog[open] { animation: none; }
+    }
+
+    /* ===== 响应式 ===== */
+    @media (max-width: 1080px) {
+      .hero { column-gap: clamp(28px, 4vw, 48px); }
+      .hero-orbit {
+        width: clamp(200px, 21vw, 258px);
+        margin-right: 0;
+      }
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: minmax(0, 1fr);
+        min-height: 0;
+        padding-top: clamp(56px, 9vh, 88px);
+        padding-bottom: clamp(88px, 12vw, 120px);
+      }
+      .hero-orbit { display: none; }
+      .scroll-cue { display: none; }
+      .about {
+        grid-template-columns: minmax(0, 1fr);
+        gap: clamp(28px, 4vw, 40px);
+        padding-block: clamp(76px, 11vw, 112px);
+      }
+    }
+
+    @media (max-width: 760px) {
+      .socials {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+        margin-top: 48px;
+      }
+      .social-link { padding: 20px 22px; }
+    }
+
+    @media (max-width: 640px) {
+      .site-header { padding: 13px 20px; }
+      .site-nav { gap: 14px; }
+      .site-nav .nav-link { display: none; }
+
+      .hero {
+        padding-top: 44px;
+        padding-bottom: 78px;
+      }
+      .eyebrow {
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        font-size: 10.5px;
+        letter-spacing: .2em;
+      }
+      .eyebrow .en { font-size: 9.5px; }
+      .hero-hello {
+        font-size: .84rem;
+        letter-spacing: .34em;
+      }
+      .hero-tagline {
+        font-size: 1.02rem;
+        line-height: 1.9;
+        letter-spacing: .025em;
+      }
+      .hero-tags { gap: 8px; }
+      .hero-tags span {
+        padding: 7px 13px;
+        font-size: 11px;
+        letter-spacing: .1em;
+      }
+
+      .about { padding-block: 76px; }
+      .about h2 {
+        font-size: clamp(1.85rem, 7.4vw, 2.3rem);
+        line-height: 1.5;
+      }
+      .about-text {
+        font-size: 1.02rem;
+        line-height: 2;
+      }
+
+      .site-footer {
+        padding-top: 76px;
+        padding-bottom: 26px;
+      }
+      .footer-title {
+        font-size: clamp(2rem, 8.8vw, 2.9rem);
+        line-height: 1.45;
+      }
+      .footer-note {
+        font-size: .98rem;
+        line-height: 1.9;
+      }
+      .social-en.email-address { font-size: 11px; }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .footer-motto { display: none; }
+
+      .qr-panel { padding: 16px; border-radius: 16px; }
+      .qr-title { font-size: 1.25rem; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "葛洪旭",
+    "jobTitle": "保险代理人",
+    "email": "18243340330@163.com",
+    "description": "以专业与真诚，守护每一个家庭的安心与未来。"
+  }
+  </script>
+</head>
+<body id="top">
+  <div class="site-bg" aria-hidden="true">
+    <span class="bg-glow glow-1"></span>
+    <span class="bg-glow glow-2"></span>
+    <span class="bg-glow glow-3"></span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="葛洪旭 · 回到顶部">
+      <span class="brand-mark" aria-hidden="true">葛</span>
+      <span class="brand-name">葛洪旭</span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a class="nav-link" href="#about">关于我</a>
+      <a class="nav-cta" href="#contact">联系我</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">保险代理人 <span class="en">Insurance Advisor</span></p>
+        <h1 id="hero-title">
+          <span class="hero-hello">你好，我是</span>
+          <span class="hero-name">葛洪旭</span>
+        </h1>
+        <p class="hero-tagline">以专业与真诚，守护每一个家庭的安心与未来。</p>
+        <div class="hero-tags" aria-label="服务方向">
+          <span>家庭保障</span>
+          <span>健康医疗</span>
+          <span>财富传承</span>
+        </div>
+      </div>
+
+      <div class="hero-orbit" aria-hidden="true">
+        <svg viewBox="0 0 240 240" role="presentation">
+          <defs>
+            <path id="orbitPath" d="M120,120 m-92,0 a92,92 0 1,1 184,0 a92,92 0 1,1 -184,0"></path>
+          </defs>
+          <circle class="orbit-ring" cx="120" cy="120" r="116"></circle>
+          <circle class="orbit-ring-inner" cx="120" cy="120" r="64"></circle>
+          <g class="orbit-spin">
+            <text class="orbit-text">
+              <textPath href="#orbitPath">TRUST · CARE · PROTECTION · 专业 · 真诚 · 守护 · </textPath>
+            </text>
+            <circle class="orbit-dot" cx="120" cy="28" r="2.4"></circle>
+          </g>
+          <text class="orbit-mark" x="120" y="120" text-anchor="middle" dominant-baseline="central">✦</text>
+        </svg>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="向下浏览关于我">
+        <span>SCROLL</span>
+        <span class="scroll-cue-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about-head reveal">
+        <p class="section-index">
+          <span class="num">01</span>
+          <span class="label">关于我</span>
+          <span class="en">About</span>
+        </p>
+        <h2 id="about-title">把复杂的保障，<br><span class="soft">讲成安心的话。</span></h2>
+      </div>
+
+      <div class="about-body reveal" data-delay="1">
+        <p class="about-text">
+          我是葛洪旭，一名保险代理人。入行以来，我始终相信：保险不是一份冷冰冰的合同，而是一份<span class="mark">对家人沉甸甸的承诺</span>。我专注于为个人与家庭提供风险管理与保障规划——用专业读懂每一条条款，用耐心倾听每一个需求，帮助你在不确定的世界里，握住<span class="mark">确定的安心</span>。
+        </p>
+        <p class="about-sign">葛洪旭 · 保险代理人</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-top reveal">
+        <p class="section-index footer-index">
+          <span class="num">02</span>
+          <span class="label">联系我</span>
+          <span class="en">Contact</span>
+        </p>
+        <h2 class="footer-title">愿每一个家庭，<br><span class="soft">都被好好守护。</span></h2>
+        <p class="footer-note">如果你正在规划家庭保障，或只是想聊聊对未来的期待，欢迎扫码添加我的微信，或给我写一封邮件。</p>
+      </div>
+
+      <nav class="socials reveal" data-delay="1" aria-label="联系方式">
+        <a class="social-link" href="assets/wechat-qr.jpg" data-qr="wechat" aria-haspopup="dialog" aria-controls="qr-wechat" title="点击查看微信二维码">
+          <span class="social-text">
+            <span class="social-name">微信</span>
+            <span class="social-en">WeChat</span>
+          </span>
+          <span class="social-icon-wrap" aria-hidden="true">
+            <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <rect x="3.5" y="3.5" width="5.5" height="5.5" stroke="currentColor" stroke-width="1.3"></rect>
+              <rect x="15" y="3.5" width="5.5" height="5.5" stroke="currentColor" stroke-width="1.3"></rect>
+              <rect x="3.5" y="15" width="5.5" height="5.5" stroke="currentColor" stroke-width="1.3"></rect>
+              <path d="M15 15h2v2h-2zM19 15h2v2h-2zM15 19h2v2h-2zM19 19h2v2h-2z" fill="currentColor"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a class="social-link" href="assets/xiaohongshu-qr-code.png" data-qr="xiaohongshu" aria-haspopup="dialog" aria-controls="qr-xiaohongshu" title="点击查看小红书二维码">
+          <span class="social-text">
+            <span class="social-name">小红书</span>
+            <span class="social-en">Xiaohongshu</span>
+          </span>
+          <span class="social-icon-wrap" aria-hidden="true">
+            <svg class="social-icon" width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <rect x="3.5" y="3.5" width="5.5" height="5.5" stroke="currentColor" stroke-width="1.3"></rect>
+              <rect x="15" y="3.5" width="5.5" height="5.5" stroke="currentColor" stroke-width="1.3"></rect>
+              <rect x="3.5" y="15" width="5.5" height="5.5" stroke="currentColor" stroke-width="1.3"></rect>
+              <path d="M15 15h2v2h-2zM19 15h2v2h-2zM15 19h2v2h-2zM19 19h2v2h-2z" fill="currentColor"></path>
+            </svg>
+          </span>
+        </a>
+
+        <a class="social-link" href="mailto:18243340330@163.com" title="给我写邮件">
+          <span class="social-text">
+            <span class="social-name">邮箱</span>
+            <span class="social-en email-address">18243340330@163.com</span>
+          </span>
+          <span class="social-icon-wrap" aria-hidden="true">
+            <svg class="social-icon" width="18" height="18" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17 17 7M9 7h8v8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </span>
+        </a>
+      </nav>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> 葛洪旭 <span class="sep">/</span> 保险代理人</p>
+        <p class="footer-motto">用心守护每一份托付</p>
+        <a href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="qr-dialog" id="qr-wechat" aria-labelledby="qr-wechat-title">
+    <div class="qr-panel">
+      <div class="qr-head">
+        <div>
+          <p class="qr-kicker">WeChat</p>
+          <h2 class="qr-title" id="qr-wechat-title">扫码添加我的微信</h2>
+        </div>
+        <button class="qr-close" type="button" data-close-dialog aria-label="关闭微信二维码">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="qr-media">
+        <img src="assets/wechat-qr.jpg" alt="微信二维码：扫码添加葛洪旭为好友" width="962" height="1231" decoding="async">
+      </div>
+      <p class="qr-note">打开微信 · 扫一扫，添加我为好友</p>
+    </div>
+  </dialog>
+
+  <dialog class="qr-dialog" id="qr-xiaohongshu" aria-labelledby="qr-xiaohongshu-title">
+    <div class="qr-panel">
+      <div class="qr-head">
+        <div>
+          <p class="qr-kicker">Xiaohongshu</p>
+          <h2 class="qr-title" id="qr-xiaohongshu-title">在小红书找到我</h2>
+        </div>
+        <button class="qr-close" type="button" data-close-dialog aria-label="关闭小红书二维码">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="qr-media">
+        <img src="assets/xiaohongshu-qr-code.png" alt="小红书二维码：扫码关注葛洪旭" width="320" height="320" decoding="async">
+      </div>
+      <p class="qr-note">打开小红书扫一扫 · 或搜索小红书号 49213062650</p>
+    </div>
+  </dialog>
+
+  <script>
+    const yearEl = document.querySelector('[data-year]');
+    if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+    (function () {
+      const items = document.querySelectorAll('.reveal');
+      if (!items.length) return;
+
+      if (!('IntersectionObserver' in window)) {
+        items.forEach((el) => el.classList.add('is-visible'));
+        return;
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.14, rootMargin: '0px 0px -6% 0px' });
+
+      items.forEach((el) => observer.observe(el));
+    })();
+
+    (function () {
+      const supportsDialog = typeof HTMLDialogElement === 'function';
+
+      document.querySelectorAll('[data-qr]').forEach((trigger) => {
+        trigger.addEventListener('click', (event) => {
+          if (!supportsDialog) return;
+          const dialog = document.getElementById('qr-' + trigger.dataset.qr);
+          if (!dialog || typeof dialog.showModal !== 'function') return;
+          event.preventDefault();
+          dialog.showModal();
+          document.body.classList.add('modal-open');
+        });
+      });
+
+      document.querySelectorAll('[data-close-dialog]').forEach((button) => {
+        button.addEventListener('click', () => {
+          const dialog = button.closest('dialog');
+          if (dialog) dialog.close();
+        });
+      });
+
+      document.querySelectorAll('.qr-dialog').forEach((dialog) => {
+        dialog.addEventListener('click', (event) => {
+          if (event.target === dialog) dialog.close();
+        });
+        dialog.addEventListener('close', () => {
+          document.body.classList.remove('modal-open');
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
