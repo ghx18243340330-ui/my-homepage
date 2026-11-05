@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>葛洪旭 · 保险代理人</title>
-  <meta name="description" content="我是葛洪旭，一名保险代理人。以专业与真诚，守护每一个家庭的安心与未来。">
+  <title>葛洪旭 · 人机协作探索者</title>
+  <meta name="description" content="我是葛洪旭，一个正在探索人机协作的人，职业是保险代理人。这里记录我的探索、作品与保险服务。">
   <meta name="author" content="葛洪旭">
   <meta name="theme-color" content="#f8f8f1">
   <meta name="color-scheme" content="light">
-  <meta property="og:title" content="葛洪旭 · 保险代理人">
-  <meta property="og:description" content="以专业与真诚，守护每一个家庭的安心与未来。">
+  <meta property="og:title" content="葛洪旭 · 人机协作探索者">
+  <meta property="og:description" content="在人与 AI 之间，寻找更好的协作方式。职业是保险代理人，记录探索与作品。">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="zh_CN">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23e8b04a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='34' fill='%23173247' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
@@ -62,6 +62,7 @@
     a { color: inherit; }
     svg { display: block; }
     button { font-family: inherit; }
+    .keep-together { white-space: nowrap; }
 
     :focus-visible {
       outline: 2px solid var(--blue);
@@ -525,6 +526,275 @@
       opacity: .9;
     }
 
+    .about-text + .about-text { margin-top: 1.1em; }
+
+    /* ===== 职业 ===== */
+    .profession {
+      padding: clamp(36px, 5vw, 64px) var(--pad);
+    }
+    .profession-panel {
+      padding: clamp(28px, 4.5vw, 60px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(140deg, rgba(255, 255, 255, .82), rgba(255, 255, 255, .52));
+      box-shadow: 0 24px 60px rgba(32, 68, 86, .06);
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+    .profession-intro {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: clamp(28px, 5vw, 80px);
+      align-items: start;
+    }
+    .profession h2 {
+      font-size: clamp(2rem, 3.4vw, 3.2rem);
+      line-height: 1.48;
+      font-weight: 400;
+      letter-spacing: .03em;
+      color: var(--text);
+    }
+    .profession h2 .soft {
+      color: #6d8492;
+      font-weight: 400;
+    }
+    .profession-body p {
+      color: var(--text-soft);
+      font-size: clamp(1.02rem, 1.15vw, 1.12rem);
+      line-height: 2.1;
+      letter-spacing: .035em;
+    }
+    .profession-services {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: clamp(20px, 3vw, 36px);
+      margin-top: clamp(32px, 4vw, 48px);
+      padding-top: clamp(24px, 3vw, 32px);
+      border-top: 1px solid var(--line-soft);
+    }
+    .service-item { min-width: 0; }
+    .service-num {
+      display: block;
+      margin-bottom: 12px;
+      color: var(--accent-ink);
+      font-family: var(--font-serif);
+      font-size: 11px;
+      font-style: italic;
+      letter-spacing: .16em;
+    }
+    .service-title {
+      color: var(--text);
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: .12em;
+    }
+    .service-desc {
+      margin-top: 8px;
+      color: var(--text-soft);
+      font-size: 13px;
+      line-height: 1.9;
+      letter-spacing: .03em;
+    }
+
+    /* ===== 作品 ===== */
+    .works {
+      padding: clamp(56px, 8vw, 104px) var(--pad) clamp(72px, 9vw, 120px);
+    }
+    .works-head { max-width: 920px; }
+    .works h2 {
+      font-size: clamp(2rem, 3.6vw, 3.4rem);
+      line-height: 1.48;
+      font-weight: 400;
+      letter-spacing: .03em;
+      color: var(--text);
+    }
+    .works h2 .soft {
+      color: #6d8492;
+      font-weight: 400;
+    }
+    .works-intro {
+      max-width: 40em;
+      margin-top: clamp(18px, 2.4vw, 26px);
+      color: var(--text-soft);
+      font-size: clamp(1rem, 1.1vw, 1.08rem);
+      line-height: 2;
+      letter-spacing: .035em;
+      text-wrap: pretty;
+    }
+    .works-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(0, .75fr);
+      gap: 16px;
+      margin-top: clamp(40px, 5vw, 64px);
+      align-items: stretch;
+    }
+    .work-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, .64);
+      box-shadow: 0 12px 36px rgba(32, 68, 86, .05);
+      transition: transform .35s ease, box-shadow .35s ease, border-color .35s ease, background-color .35s ease;
+    }
+    .work-card:hover {
+      background: #fffdf9;
+      border-color: rgba(43, 114, 149, .28);
+      transform: translateY(-3px);
+      box-shadow: 0 18px 48px rgba(32, 68, 86, .1);
+    }
+    .work-visual { padding: 12px 12px 0; }
+    .work-visual img {
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 8 / 5;
+      object-fit: cover;
+      border-radius: 14px;
+      background: var(--bg-deep);
+    }
+    .work-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 22px clamp(22px, 2.4vw, 32px) 26px;
+    }
+    .work-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 14px;
+      color: var(--muted);
+      font-family: var(--font-serif);
+      font-size: 10.5px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .work-status {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--blue);
+    }
+    .work-status::before {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+    .work-title {
+      color: var(--text);
+      font-size: clamp(1.35rem, 2vw, 1.7rem);
+      font-weight: 400;
+      line-height: 1.4;
+      letter-spacing: .04em;
+    }
+    .work-desc {
+      margin-top: 10px;
+      color: var(--text-soft);
+      font-size: .98rem;
+      line-height: 1.9;
+      letter-spacing: .03em;
+    }
+    .work-footer {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-top: auto;
+      padding-top: 22px;
+    }
+    .work-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      list-style: none;
+    }
+    .work-tags li {
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .5);
+      color: var(--text-soft);
+      font-size: 10.5px;
+      letter-spacing: .08em;
+    }
+    .work-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      color: var(--blue);
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: color .3s ease;
+    }
+    .work-link:hover { color: var(--blue-deep); }
+    .work-link span { transition: transform .3s ease; }
+    .work-link:hover span { transform: translate(2px, -2px); }
+    .work-placeholder {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 24px;
+      min-height: 260px;
+      padding: 26px;
+      border: 1px dashed rgba(43, 114, 149, .26);
+      border-radius: 22px;
+      background: rgba(255, 255, 255, .3);
+    }
+    .placeholder-plus {
+      display: grid;
+      place-items: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(232, 176, 74, .16);
+      color: var(--accent-ink);
+      font-size: 24px;
+      font-weight: 300;
+      line-height: 1;
+    }
+    .placeholder-meta {
+      margin-bottom: 12px;
+      color: var(--blue);
+      font-family: var(--font-serif);
+      font-size: 10.5px;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .work-placeholder-title {
+      color: var(--text);
+      font-size: clamp(1.2rem, 1.8vw, 1.5rem);
+      line-height: 1.65;
+      letter-spacing: .04em;
+    }
+    .placeholder-desc {
+      margin-top: 10px;
+      color: var(--text-soft);
+      font-size: 13px;
+      line-height: 1.9;
+      letter-spacing: .03em;
+    }
+    .placeholder-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-top: 18px;
+      color: var(--blue);
+      font-size: 12px;
+      letter-spacing: .1em;
+      text-decoration: none;
+      transition: color .3s ease;
+    }
+    .placeholder-link:hover { color: var(--blue-deep); }
+    .placeholder-link span { transition: transform .3s ease; }
+    .placeholder-link:hover span { transform: translateX(3px); }
+
     /* ===== 页脚 / 联系方式 ===== */
     .site-footer {
       position: relative;
@@ -592,6 +862,7 @@
       font-size: clamp(1rem, 1.1vw, 1.08rem);
       line-height: 2;
       letter-spacing: .04em;
+      text-wrap: pretty;
     }
 
     .socials {
@@ -850,6 +1121,11 @@
         gap: clamp(28px, 4vw, 40px);
         padding-block: clamp(76px, 11vw, 112px);
       }
+      .profession-intro {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 24px;
+      }
+      .works-grid { grid-template-columns: minmax(0, 1fr); }
     }
 
     @media (max-width: 760px) {
@@ -859,6 +1135,15 @@
         margin-top: 48px;
       }
       .social-link { padding: 20px 22px; }
+      .profession-services {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 22px;
+      }
+      .service-item + .service-item {
+        padding-top: 22px;
+        border-top: 1px solid var(--line-soft);
+      }
+      .work-placeholder { min-height: 220px; }
     }
 
     @media (max-width: 640px) {
@@ -903,12 +1188,48 @@
         line-height: 2;
       }
 
+      .profession { padding-block: 24px 36px; }
+      .profession-panel {
+        padding: 24px 22px;
+        border-radius: 22px;
+      }
+      .profession h2 {
+        font-size: clamp(1.85rem, 7.4vw, 2.3rem);
+        line-height: 1.5;
+      }
+      .profession-body p {
+        font-size: 1rem;
+        line-height: 2;
+      }
+      .service-desc { font-size: 12.5px; }
+
+      .works { padding-block: 56px 76px; }
+      .works h2 {
+        font-size: clamp(1.85rem, 7.4vw, 2.3rem);
+        line-height: 1.5;
+      }
+      .works-intro {
+        font-size: .98rem;
+        line-height: 1.9;
+      }
+      .works-grid {
+        gap: 12px;
+        margin-top: 32px;
+      }
+      .work-visual { padding: 10px 10px 0; }
+      .work-content { padding: 20px 20px 22px; }
+      .work-footer { padding-top: 18px; }
+      .work-placeholder {
+        min-height: 240px;
+        padding: 22px;
+      }
+
       .site-footer {
         padding-top: 76px;
         padding-bottom: 26px;
       }
       .footer-title {
-        font-size: clamp(2rem, 8.8vw, 2.9rem);
+        font-size: clamp(1.9rem, 8vw, 2.6rem);
         line-height: 1.45;
       }
       .footer-note {
@@ -935,7 +1256,8 @@
     "name": "葛洪旭",
     "jobTitle": "保险代理人",
     "email": "18243340330@163.com",
-    "description": "以专业与真诚，守护每一个家庭的安心与未来。"
+    "description": "一个正在探索人机协作的人，职业是保险代理人。",
+    "knowsAbout": ["人机协作", "人工智能应用", "家庭保障规划"]
   }
   </script>
 </head>
@@ -953,6 +1275,8 @@
     </a>
     <nav class="site-nav" aria-label="主导航">
       <a class="nav-link" href="#about">关于我</a>
+      <a class="nav-link" href="#profession">职业</a>
+      <a class="nav-link" href="#works">作品</a>
       <a class="nav-cta" href="#contact">联系我</a>
     </nav>
   </header>
@@ -960,16 +1284,16 @@
   <main>
     <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow">保险代理人 <span class="en">Insurance Advisor</span></p>
+        <p class="eyebrow">人机协作探索者 <span class="en">Human × AI Explorer</span></p>
         <h1 id="hero-title">
           <span class="hero-hello">你好，我是</span>
           <span class="hero-name">葛洪旭</span>
         </h1>
-        <p class="hero-tagline">以专业与真诚，守护每一个家庭的安心与未来。</p>
-        <div class="hero-tags" aria-label="服务方向">
-          <span>家庭保障</span>
-          <span>健康医疗</span>
-          <span>财富传承</span>
+        <p class="hero-tagline">一个正在探索人机协作的人。用 AI 放大专业与效率，也把更多温度留给真实的人。</p>
+        <div class="hero-tags" aria-label="关注方向">
+          <span>人机协作</span>
+          <span>保险服务</span>
+          <span>持续学习</span>
         </div>
       </div>
 
@@ -1003,14 +1327,102 @@
           <span class="label">关于我</span>
           <span class="en">About</span>
         </p>
-        <h2 id="about-title">把复杂的保障，<br><span class="soft">讲成安心的话。</span></h2>
+        <h2 id="about-title">在人与 AI 之间，<br><span class="soft">寻找更好的协作方式。</span></h2>
       </div>
 
       <div class="about-body reveal" data-delay="1">
         <p class="about-text">
-          我是葛洪旭，一名保险代理人。入行以来，我始终相信：保险不是一份冷冰冰的合同，而是一份<span class="mark">对家人沉甸甸的承诺</span>。我专注于为个人与家庭提供风险管理与保障规划——用专业读懂每一条条款，用耐心倾听每一个需求，帮助你在不确定的世界里，握住<span class="mark">确定的安心</span>。
+          我是葛洪旭，一个正在探索人机协作的人。我的职业是保险代理人——每天与风险、条款和一个个具体的家庭打交道，也因此更明白专业判断与真诚沟通的分量。
         </p>
-        <p class="about-sign">葛洪旭 · 保险代理人</p>
+        <p class="about-text">
+          现在，我把 AI 当作一位<span class="mark">随时在线的搭档</span>：用它梳理信息、推敲方案、记录灵感，也用它把手头重复的事做得更快，把时间留给真正需要人的判断与陪伴。这里记录我的探索与作品，也期待遇见同样对人与 AI 共处感兴趣的朋友。
+        </p>
+        <p class="about-sign">葛洪旭 · 人机协作探索者</p>
+      </div>
+    </section>
+
+    <section class="profession" id="profession" aria-labelledby="profession-title">
+      <div class="profession-panel reveal">
+        <div class="profession-intro">
+          <div>
+            <p class="section-index">
+              <span class="num">02</span>
+              <span class="label">职业</span>
+              <span class="en">Profession</span>
+            </p>
+            <h2 id="profession-title">保险代理人，<br><span class="soft">用专业回应信任。</span></h2>
+          </div>
+          <div class="profession-body">
+            <p>
+              保险代理人，是我与真实世界紧密相连的职业。我的日常，是帮个人与家庭看清风险、读懂条款，把抽象的保障变成可以安心依靠的方案。这份工作让我相信：专业要经得起追问，真诚要落在细节里，长期的陪伴比一次成交更重要。
+            </p>
+          </div>
+        </div>
+
+        <div class="profession-services">
+          <div class="service-item">
+            <span class="service-num">01</span>
+            <h3 class="service-title">家庭保障</h3>
+            <p class="service-desc">为家庭梳理风险，搭建基础保障防线。</p>
+          </div>
+          <div class="service-item">
+            <span class="service-num">02</span>
+            <h3 class="service-title">健康医疗</h3>
+            <p class="service-desc">在医疗与康复的不确定里，多一份从容。</p>
+          </div>
+          <div class="service-item">
+            <span class="service-num">03</span>
+            <h3 class="service-title">财富传承</h3>
+            <p class="service-desc">让积累被看见，让心意被延续。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="works" id="works" aria-labelledby="works-title">
+      <div class="works-head reveal">
+        <p class="section-index">
+          <span class="num">03</span>
+          <span class="label">作品</span>
+          <span class="en">Works</span>
+        </p>
+        <h2 id="works-title">把想法做出来，<br><span class="soft">让探索留下痕迹。</span></h2>
+        <p class="works-intro">这里会陆续收录我在人机协作中的实践——<span class="keep-together">工具、内容</span>，以及一些新的可能。</p>
+      </div>
+
+      <!-- 作品区：以后新增作品时，复制 .work-card 结构即可 -->
+      <div class="works-grid reveal" data-delay="1">
+        <article class="work-card">
+          <div class="work-visual">
+            <img src="assets/work-homepage.jpg" alt="葛洪旭个人主页作品预览" width="1200" height="750" loading="lazy" decoding="async">
+          </div>
+          <div class="work-content">
+            <div class="work-meta">
+              <span>NO. 01</span>
+              <span class="work-status">已上线</span>
+            </div>
+            <h3 class="work-title">葛洪旭 · 个人主页</h3>
+            <p class="work-desc">从内容梳理、文案打磨到视觉实现与上线，和 AI 协作完成的第一版个人主页。也是这个作品区的起点。</p>
+            <div class="work-footer">
+              <ul class="work-tags" aria-label="作品标签">
+                <li>人机协作</li>
+                <li>网页设计</li>
+                <li>内容策划</li>
+              </ul>
+              <a class="work-link" href="https://github.com/ghx18243340330-ui/my-homepage" target="_blank" rel="noopener noreferrer">查看源码 <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+
+        <div class="work-placeholder" aria-label="下一件作品正在筹备">
+          <span class="placeholder-plus" aria-hidden="true">+</span>
+          <div class="placeholder-copy">
+            <p class="placeholder-meta">下一件作品 / NEXT</p>
+            <p class="work-placeholder-title">这个位置，<br>留给下一个想法。</p>
+            <p class="placeholder-desc">也许是一个小工具、一份内容实验，或一种新的协作方式。</p>
+            <a class="placeholder-link" href="#contact">有想一起做的？聊聊 <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -1019,12 +1431,12 @@
     <div class="footer-inner">
       <div class="footer-top reveal">
         <p class="section-index footer-index">
-          <span class="num">02</span>
+          <span class="num">04</span>
           <span class="label">联系我</span>
           <span class="en">Contact</span>
         </p>
-        <h2 class="footer-title">愿每一个家庭，<br><span class="soft">都被好好守护。</span></h2>
-        <p class="footer-note">如果你正在规划家庭保障，或只是想聊聊对未来的期待，欢迎扫码添加我的微信，或给我写一封邮件。</p>
+        <h2 class="footer-title">一起探索，<br><span class="soft">也一起守护重要的人。</span></h2>
+        <p class="footer-note">如果你也在探索<span class="keep-together">人机协作</span>，或正在规划<span class="keep-together">家庭保障</span>，欢迎扫码或写信给我。</p>
       </div>
 
       <nav class="socials reveal" data-delay="1" aria-label="联系方式">
@@ -1072,8 +1484,8 @@
       </nav>
 
       <div class="footer-bottom">
-        <p>© <span data-year>2026</span> 葛洪旭 <span class="sep">/</span> 保险代理人</p>
-        <p class="footer-motto">用心守护每一份托付</p>
+        <p>© <span data-year>2026</span> 葛洪旭 <span class="sep">/</span> 人机协作探索者</p>
+        <p class="footer-motto">保持好奇，也保持真诚</p>
         <a href="#top">回到顶部 <span aria-hidden="true">↑</span></a>
       </div>
     </div>
